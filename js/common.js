@@ -247,6 +247,33 @@
 
 		headerFrontOne ()
 
+
+       // header front-0
+
+		function headerFrontZero () {
+
+			const header = $('.header-f0')
+
+			if (!header.length) return
+
+			const topSize = parseInt(header.find('.header__lower').css('height'))
+			const lower = $('.header-f0 .header__top')
+			const scroll = $(window).scrollTop()
+
+			if (scroll >= 1) {
+				header.css({'transform':'translate(-50%, -' + topSize + 'px)'})
+				lower.addClass('lower--fixed')
+			}
+
+			else {
+				header.css({'transform':'translate(-50%, -' + 0 + 'px)'})
+				lower.removeClass('lower--fixed')
+			}
+
+		}
+       headerFrontZero ()
+
+
 		// header front-2
 
 		function headerFrontTwo () {
@@ -1205,7 +1232,7 @@
 				arrows: false,
 				dots: true,
 				appendDots: $('.destination-slider__dots'),
-				slidesToShow: 4,
+				slidesToShow: 5,
 				slidesToScroll: 2,
 
 				responsive: [{

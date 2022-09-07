@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="description"/>
+		<meta name="keywords" content="keywords"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>ZSI-Home</title>
+		<!-- styles-->
+		<link rel="stylesheet" href="css/styles.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+		<!-- web-font loader-->
+		<script>
+			WebFontConfig = {
+
+				google: {
+
+					families: ['Nunito+Sans:300,400,500,700,900', 'Quicksand:300,400,500,700'],
+
+				}
+
+			}
+
+			function font() {
+
+				var wf = document.createElement('script')
+
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'
+				wf.type = 'text/javascript'
+				wf.async = 'true'
+
+				var s = document.getElementsByTagName('script')[0]
+
+				s.parentNode.insertBefore(wf, s)
+
+			}
+
+			font()
+		</script>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<!-- menu dropdown start-->
+			<div class="menu-dropdown">
+				<div class="menu-dropdown__inner" data-value="start">
+					<div class="screen screen--start">
+					
+				</div>
+
+				</div>
+			</div> 
+			<!-- menu dropdown end-->
+			<!-- header start-->
+			<header class="header shop-header header-f0">
+				<div class="header__lower" >
+					<div class="row">
+						<div class="col-12 d-flex align-items-center justify-content-between">
+							<div class="header__lower-inner">
+							<ul class="lower-menu">
+							    <li class="lower-menu__item"><a class="lower-menu__link" href="#">Home</a></li>
+								<li class="lower-menu__item"><a class="lower-menu__link" href="#">About us</a></li> 
+								<li class="lower-menu__item"><a class="lower-menu__link" href="#">Contacts</a></li>
+								<li class="lower-menu__item"><a class="lower-menu__link" href="#">Skip to Main Content</a></li>
+								<li class="lower-menu__item"><a class="lower-menu__link" href="#">Screen Reader Access</a></li>
+								
+								
+							</ul>
+							</div>
+							
+							
+						   
+							<div class="header__lower-inner">
+							<!-- lang select start-->
+							<ul class="lang-select">
+								<li class="lang-select__item lang-select__item--active"><span>A+</span>
+									<ul class="lang-select__sub-list">
+										<li><a href="#">A</a></li>
+										<li><a href="#">A-</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="lang-select">
+								<li class="lang-select__item lang-select__item--active"><span>English</span>
+									<ul class="lang-select__sub-list">
+										<li><a href="#">Hindi</a></li>
+										<li><a href="#">English</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- lang select end-->
+							<ul class="header__socials">
+								<li><a class="item--facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a class="item--twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a class="item--youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+								<li><a class="item--instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+
+
+							<div class="search-wrapper">
+							    <div class="input-holder">
+							        <input type="text" class="search-input" placeholder="Type to search" />
+							        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+							    </div>
+							    <span class="close" onclick="searchToggle(this, event);"></span>
+							</div>
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="header__top" >
+					<div class="row align-items-center">
+						<div class="col-6 col-lg-4" data-aos="fade-right"><a class="logo" href="index.html"><img class="logo__img" src="img/zsi_logo.png" alt="logo"/>
+							<h5 style="">Zoological Survey of India<br>
+								<span style="">Ministry of Environment, Forest and Climate Change<br>Government of India</span>
+							</h5>
+							
+						</a></div>
+						<div class="col-6 col-lg-8 d-flex justify-content-end">
+							<!-- main menu start-->
+							<ul class="main-menu" style="display: none;">
+								<li class="main-menu__item main-menu__item--active"><a class="main-menu__link " href="#"><span>Home</span></a></li>
+								<li class="main-menu__item main-menu__item--has-child "><a class="main-menu__link" href="javascript:void(0);"><span>About us</span></a>
+									<!-- sub menu start-->
+									<ul class="main-menu__sub-list">
+										<li class="item--active"><a href="#"><span>Objective</span></a></li>
+										<li><a href="#"> <span>Brief History</span></a></li>
+										<li><a href="#"><span>Background</span></a></li>
+										<li><a href="#"><span>ZSI Scientists</span></a></li>
+										<li><a href="#"><span>Indian Faunal Experts</span></a></li>
+										
+									</ul>
+									<!-- sub menu end-->
+								</li>
+								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Regional Centres</span></a>
+									<!-- sub menu start-->
+									<ul class="main-menu__sub-list sub-list--style-2">
+										  <li><a target="_self" href="#">NERC Shillong</a></li>
+										  <li><a target="_self" href="#">NRC Dehra Dun</a></li>    
+										  <li><a target="_self" href="#">SRC Canning</a></li>
+										  <li><a target="_self" href="#">ANRC Port Blair</a></li>    
+										  <li><a target="_self" href="#">APRC Itanagar</a></li>    
+										  <li><a target="_self" href="#">CZRC Jabalpur</a></li>   
+										  <li><a target="_self" href="#">DRC Jodhpur</a></li>    
+										  <li><a target="_self" href="#">EBRC Orissa</a></li>    
+										  <li><a target="_self" href="#">FBRC Hyderabad</a></li>    
+										  <li><a target="_self" href="#">GPRC Patna</a></li>    
+										  <li><a target="_self" href="#">HARC Solan</a></li>    
+										  <li><a target="_self" href="#">MARC Digha</a></li>    
+										  <li><a target="_self" href="#">SRC Chennai</a></li>    
+										  <li><a target="_self" href="#">MBRC Chennai</a></li>    
+										  <li><a target="_self" href="#">WRC Pune</a></li>    
+										  <li><a target="_self" href="#">WGRC Calicut</a></li>
+									</ul>
+									<!-- sub menu end-->
+								</li>
+								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Services</span></a>
+									<!-- sub menu start-->
+									<ul class="main-menu__sub-list ">
+										<li><a href="#"><span>Library</span></a></li>
+										<li><a href="#"><span>Identification</span></a></li>
+										<li><a href="#"><span>Advisory</span></a></li>
+										<li><a href="#"><span>EIA Studies</span></a></li>
+										<li><a href="#"><span>Training  Extension</span></a></li>
+										<li><a href="#"><span>GSDP</span></a></li>
+										
+									</ul>
+									<!-- sub menu end-->
+								</li>
+								<!-- <li class="main-menu__item"><a class="main-menu__link" href="blog.html"><span>Blog</span></a></li> -->
+								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Publications</span></a>
+									<!-- sub menu start-->
+									<ul class="main-menu__sub-list">
+										<li><a href="#"><span>Publications of ZSI</span></a></li>
+										<li><a href="#"><span>e-Publications</span></a></li>
+										<li><a href="#"><span>List of Publications</span></a></li>
+										<li><a href="#"><span>How to Procure</span></a></li>
+										<li><a href="#"><span>State Fauna Series</span></a></li>
+									</ul>
+									<!-- sub menu end-->
+								</li>
+								
+								
+							</ul>
+							<!-- main menu end-->
+							<a data-aos="fade-left" class="header__button" href="#"><img src="img/emblem.png" alt="emblem"></a>
+							<!-- menu-trigger start-->
+							<div class="hamburger">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+							<!-- menu-trigger end-->
+						</div>
+					</div>
+				</div>
+
+			</header>
+			<main class="main microw-sites">
+				<!-- promo start-->
+				<section class="promo promo--front-5">
+					<div class="promo-slider">
+						<div class="promo-slider__item promo-slider__item--style-2">
+							<picture>
+								<source srcset="img/reg_centres/APRC_Office_bldng.jpg" media="(min-width: 992px)"/><img class="img--bg" src="img/APRC_Office_bldng.jpg" alt="img"/>
+							</picture>
+							<div class="container">
+								<div class="row">
+									<div class="col-xl-10 offset-xl-1">
+										<div class="align-container">
+											<div class="align-container__item text-center">
+												<div class="promo-slider__wrapper-1">
+													<h2 class="promo-slider__title"><span>Welcome To</span><br/><span>APRC Itanagar</span></h2>
+												</div>
+										
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						 <div class="promo-slider__item promo-slider__item--style-2">
+							<picture>
+								<source srcset="img/reg_centres/3.jpg" media="(min-width: 992px)"/><img class="img--bg" src="img/reg_centres/3.jpg" alt="img"/>
+							</picture>
+							<div class="container">
+								<div class="row">
+									<div class="col-xl-6 offset-xl-6">
+										<div class="align-container">
+											<div class="align-container__item"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!-- 						<div class="promo-slider__item promo-slider__item--style-3">
+							<picture>
+								<source srcset="img/front_5-promo-3.jpg" media="(min-width: 992px)"/><img class="img--bg" src="img/front_5-promo-3.jpg" alt="img"/>
+							</picture>
+							<div class="container">
+								<div class="row">
+									<div class="col-xl-8 offset-xl-2">
+										<div class="align-container">
+											<div class="align-container__item">
+												<div class="promo-slider__wrapper-1">
+													<h2 class="promo-slider__title"><span>Meet our</span><br/><span>awesome safari</span></h2>
+												</div>
+												<div class="promo-slider__wrapper-2">
+													<p class="promo-slider__subtitle">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
+												</div>
+												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">Discover</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<!-- slider nav start-->
+								<div class="promo-slider__nav"></div>
+								<!-- slider nav end-->
+							</div>
+						</div>
+					</div>
+					<!-- promo pannel start-->
+					<div class="promo-pannel" data-aos="fade-right"><a class="video-trigger" href="https://www.youtube.com/watch?v=TfbvUk-i4vk"><img class="img--bg" src="img/zsi-v3-thumb.png" alt="image"/><span class="video-trigger__icon"><span>Video</span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+						<div class="promo-pannel__weather"><span class="color--white">Latest News</span>
+							<div class="weather-lower">
+								<marquee direction="up" height="70" onmouseover="this.stop();" onmouseout="this.start();"> 
+									<ul>
+										<li><a href="#">ZSI foundation day celebration. Read More...</a></li>
+										<li><a href="#">Dhriti Banerjee becomes 1st woman director in 100 years of Zoological Survey of India history. Read more..</a></li>
+										
+									</ul>
+								</marquee>
+							</div>
+						</div>
+					</div>
+					<!-- promo pannel end-->
+				</section>
+				<!-- promo end-->
+				<!-- section start-->
+				<section class="section about-safari"><img class="about-safari__left" src="img/about-safari_left.png" alt="img"/><img class="about-safari__right" src="img/about-safari_right.png" alt="img"/>
+					<div class="container">
+						<div class="row bottom-70">
+							<div class="col-lg-4" data-aos="fade-right">
+
+								<div class="info-box">
+									<div class="info-box__inner"><img class="img--bg" src="img/reg_centres/APRC_Office_bldng.jpg" alt="img"/>
+										<div class="heading heading--primary">
+											<h2 class="heading__title color--white"><span>About Us</span><br/> <span>APRC Itanagar</span> </h2>
+										</div>
+										
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-lg-8" data-aos="fade-left">
+								<div class="heading heading--primary heading--style-2"><span class="heading__pre-title">About US</span>
+									<h2 class="heading__title"><span></span><span>APRC Itanagar</span></h2>
+								</div>
+								<p><strong>Arunachal Pradesh known as the land of ‘dawn-lit mountains’ is a thinly populated and mountainous tract on the easternmost part of India. The higher areas, especially the peaks of the Great Himalays remain snow-capped throughout the year. Owing to great altitudinal variation, from less than 100 m to above 5000 m, five biomes are found in the state. </strong></p>
+								<p class="no-margin-bottom">Arunachal Pradesh forms a part of Eastern Himalaya global biodiversity hot spot and is also among the 200 globally important eco-regions. The state displays high degree of endemism and comparatively higher incidence of rare and threatened taxa. Such unparalleled distinction can be attributed primarily to the unique geophysical positioning of the state in the transition zone between the Palearctic and Orioental biogeographic regions. Being in the ecotone of the two regions, due to edge effect, the state possess biotic elements from both the regions as well as have its exclusive components and thus represents Indo-Chinese, Indo-Malayan, Indo-Burmese and Indian biotic components. This has earned the state the distinction of one of the main corridor for eastern entrant of the ‘Indian sub-region. That is why it is also referred as an active centre of organic evolution. Recognizing the importance of the state in terms of faunal diversity, Government of India established the Arunachal Pradesh Regional Centre of the Zoological Survey of India on 31st January 1983, at Itanagar under the Seventh Five Year Plan mainly to augment and explore the knowledge on faunal wealth of Arunachal Pradesh.</p>
+
+							</div>
+
+						</div>
+						<div class="row top-50 d-flex d-lg-none">
+							<div class="col-12 text-center"><a class="button button--primary" href="#">Read more</a></div>
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+
+
+				<!-- section start-->
+
+		<!-- 	 <section class="section no-padding-top">
+					<div class="container">
+						<div class="row bottom-50 align-items-end">
+							<div class="col-md-8">
+								<div class="heading heading--style-2"><span class="heading__pre-title">Navigations</span>
+									<h2 class="heading__title no-margin-bottom"><span>of</span> <span>APRC Itanagar</span></h2>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="destination-slider__dots text-left text-md-right"></div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-holder">
+						<div class="slider-holder__wrapper">
+							<div class="destination-slider">
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/1.jpg" alt="img"/>
+										<div class="destination-item__count"><span>01</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Area under Jurisdiction</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/2.jpg" alt="img"/>
+										<div class="destination-item__count"><span>02</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Major Programmes Undertaken</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/3.jpg" alt="img"/>
+										<div class="destination-item__count"><span>03</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Areas surveyed</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/4.jpg" alt="img"/>
+										<div class="destination-item__count"><span>04</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">NZC</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/5.jpg" alt="img"/>
+										<div class="destination-item__count"><span>05</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Major Scientific Contribution</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/6.jpg" alt="img"/>
+										<div class="destination-item__count"><span>06</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Training and Extension</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/7.jpg" alt="img"/>
+										<div class="destination-item__count"><span>07</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">News Paper Clippings</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+					s
+							<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/8.jpg" alt="img"/>
+										<div class="destination-item__count"><span>08</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Taxonomic Expertise</h6><a class="button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+							<div class="destination-slider__item">
+							<div class="destination-item"><img class="img--bg" src="img/reg_centres/navigation/9.jpg" alt="img"/>
+										<div class="destination-item__count"><span>09</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Modern Infrastructure</h6><a class=" button button--primary button--rounded color--white" href="#">Click to Show</a>
+										</div>
+									</div>
+								</div>
+						
+						</div>
+					</div>
+				</section>  -->
+
+
+				<!-- section start-->
+				<section class="section elements " style="background: #157865; margin-top: -35px;">
+					<img class="footer__bg img--bg" src="img/background__layout.png" alt="bg" />
+					
+					<div class="container">
+						<!-- <div class="row">
+							<div class="col-xl-10">
+								<h4 class="elements__title">Variant 2</h4>
+							</div>
+						</div> -->
+						<div class="row">
+							<div class="col-xl-12">
+								<div class="tabs vertical-tabs">
+									<ul class="vertical-tabs__header" data-aos="fade-right">
+										<li><a href="#vertical-tabs__item-1"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Area under Jurisdiction </span></a></li>
+										<li><a href="#vertical-tabs__item-2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Major Programmes Undertaken</span></a></li>
+										<li><a href="#vertical-tabs__item-3"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Areas surveyed</span></a></li>
+										<li><a href="#vertical-tabs__item-4"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>NZC</span></a></li>
+										<li><a href="#vertical-tabs__item-5"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Achievements</span></a></li>
+										<li><a href="#vertical-tabs__item-6"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Major Scientific Contribution</span></a></li>
+										<li><a href="#vertical-tabs__item-7"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>News Paper Clippings</span></a></li>
+										<li><a href="#vertical-tabs__item-8"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Training and Extension</span></a></li>
+										<li><a href="#vertical-tabs__item-9"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Taxonomic Expertise</span></a></li>
+										<li><a href="#vertical-tabs__item-10"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><span>Modern Infrastructure</span></a></li>
+									</ul>
+									<div class="vertical-tabs__content" data-aos="fade-left">
+										<div class="vertical-tabs__item" id="vertical-tabs__item-1">
+											<h4><strong>Area under Jurisdiction</strong></h4><p>Arunachal Pradesh, northeastern state with an area of 83,743 sq. km having eight Wildlife Sanctuaries, one Orchid Sanctuary and two National Parks in the state of Arunachal Pradesh covering an area of 9,489 sq km.</p>
+											
+											<div class="blog-post__img"><img class="img-bg" src="https://zsi.gov.in/WriteReadData/userfiles/image/APRC%20Itanagar/APRC%20jurisdiction.png" alt="img"></div>
+										</div>
+										<div class="vertical-tabs__item" id="vertical-tabs__item-2">
+											<h4><strong>Major Programmes Undertaken</strong></h4>
+											<p><ul class="curved-round">
+											    <li>Bio-acoustic studies o Avifauna of Arunachal Pradesh</li>
+											    <li>Taxonomic Studies on the Mammals of Arunachal Pradesh</li>
+											    <li>Studies of Pisces and Amphibians of Arunachal Pradesh</li>
+											    <li>Ichthyofauna of Lower Subansiri district</li>
+											    <li>Taxonomy Diversity of zooplankton of Lower Arunachal Pradesh</li>
+											    <li>Studies on small mammals of Arunachal Pradesh</li>
+											    <li>Studies on the bird communities of Pakke Tiger Reserve</li>
+											    <li>Studies on the faunistic distribution in Pakke Tiger Reserve</li>
+											    <li>Studies on the faunistic distribution in Itanagar Wildlife Sanctuary</li>
+											    <li>Studies on the wasps and butterflies of Arunachal Pradesh</li>
+											    <li>Studies on the waterbirds of Arunachal Pradesh</li>
+											    <li>Faunistic expedition in Tawang district of Arunachal Pradesh</li>
+											    <li>Faunistic expedition in Namdapha Tiger Reserve of Arunachal Pradesh</li>
+											    <li>Fauna of Tale Wildlife Sanctuary</li>
+											    <li>Fauna of Mehao Forest Reserve</li>
+											</ul>
+										      </p>										
+											</div>
+										<div class="vertical-tabs__item" id="vertical-tabs__item-3">
+											<h4><strong>Areas surveyed.</strong></h4>
+											<p>In addition to the regular survey throughout the state detailed surveys have been undertaken in Namdapha Tiger Reserve, Pakke Tiger Reserve, DÉring Memorial Wildlife Sanctuary, Eaglnest and Sessa Orchid Wildlife Sanctuary, Mouling National Park, Mehao Wildlife Sanctuary.</p>
+										</div>
+										<div class="vertical-tabs__item" id="vertical-tabs__item-4">
+											<h4><strong>NZC</strong></h4><p>
+												<ul class="checkmark">
+												    <li>Total holdings: 30,814</li>
+												    <li>Named: 3158</li>
+												    <li>Type specimen: 16
+
+												    <ul class="outline-square">
+												     <li>Holotype: 09</li>
+												     <li>Paratype: 07</li>
+												    </ul>
+												 </li>
+											    </ul>
+										       </p>
+										       <div class="row">
+										       	<div class="col-6">
+										       		<span>APRC Dry Museum</span>
+										       	   <img  src="img/reg_centres/APRC_Dry_Museum.jpg" alt="img">
+										       	</div>
+										       	<div class="col-6">
+										       		<span>APRC Wet Museum</span>
+										       		<img src="img/reg_centres/APRC_Wet_Museum.jpg" alt="img">
+										       	</div>
+										       </div>
+										</div>
+										<div class="vertical-tabs__item" id="vertical-tabs__item-5">
+											<h4><strong>Achievements</strong></h4>
+											<p>
+										    <ul class="arrow">
+										    <li>Fauna of Arunachal Pradesh, Part I : Vertebrates</li>
+										    <li>Fauna of Arunachal Pradesh, Part 2: Invertebrates</li>
+										    <li>Staff from APRC, ZSI, participated in Antarctica Expeditions<br>
+										    &nbsp;</li>
+										</ul></p>
+										</div>
+										<div class="vertical-tabs__item" id="vertical-tabs__item-6">
+											<h4><strong>Achievements</strong></h4>
+											<p>
+												In 2008 and 2009 we have conducted two scientific expedition one each in Tawang and Namdapha Tiger Reserve of Arunachal Pradesh along with the help of scientists from other Centres of ZSI; as many as 06 new species species of Encyrtidae and Pteromalidae belonging a new Genus of Hymenoptera were described. Interesting information on the distribution of amphibian fauna in Tawang and Namdapha Tiger Reserve was also revealed. Also scientists of the Centre have documented over 90 species of fish from various freshwater bodies of Arunachal Pradesh. We have brought out detailed reports on the fauna of Itanagar Wildlife Sanctuary and Pakke Tiger Reserve of the State. Nine new species of fishes have been discovered by the scientists of the centre. Staff from APRC, ZSI, participated in Antarctica Expeditions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+				<!-- section start-->
+				<section class="parallax-section4" >
+			    <div class="container">
+			      <div style="padding:130px 0px">
+			        <div class="row">
+			         
+			          <div class="col-md-2 col-xl-12">
+			            <div class="events" data-aos="zoom-in-right">
+			              Indian Elephants
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </section>
+			  <!-- section end-->
+				<!-- section start-->
+				<section class="section background--gray">
+					<div class="container">
+						<div class="row offset-70">
+							<div class="col-12" data-aos="fade-up-right">
+								<div class="advantages-item">
+									<div class="row align-items-center">
+										<div class="col-lg-6">
+											<div class="advantages-item__img"><img class="img--bg" src="img/reg_centres/1.jpg" alt="img"/></div>
+										</div>
+										<div class="col-lg-6 col-xl-5 offset-xl-1">
+											<h3 class="advantages-item__title"> <strong>Museum</strong> </h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="button button--primary" href="#">Show More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12" data-aos="fade-up-left">
+								<div class="advantages-item">
+									<div class="row align-items-center flex-column-reverse flex-lg-row">
+										<div class="col-lg-6 col-xl-5">
+											<h3 class="advantages-item__title">  <strong>Library</strong> </h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="button button--primary" href="#">Show More</a>
+										</div>
+										<div class="col-lg-6 offset-xl-1 col-xl-6">
+											<div class="advantages-item__img"><img class="img--bg" src="img/reg_centres/2.jpg" alt="img"/></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<!-- section end-->
+
+
+		<section class="section animals-section">
+					<div class="container">
+						<div class="row bottom-50">
+							<div class="col-12">
+								<div class="heading heading--center"><span class="heading__pre-title"></span>
+									<h2 class="heading__title no-margin-bottom"><span>Important</span> <span>Links</span></h2>
+								</div>
+							</div>
+						</div>
+						<div class="row offset-30">
+							<div class="col-6 col-sm-4 col-md-3 col-xl-3 bottom-80" data-aos="fade-up">
+								<div class="amimal text-center">
+									<div class="wrap">
+									  <button class="button">Publication</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-xl-3 bottom-80" data-aos="fade-down">
+								<div class="amimal text-center">
+									<div class="wrap">
+									  <button class="button">Whats New</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-xl-3 bottom-80" data-aos="fade-up">
+								<div class="amimal text-center">
+									<div class="wrap">
+									  <button class="button">Scientist Profile</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 col-xl-3 bottom-80" data-aos="fade-down">
+								<div class="amimal text-center">
+									<div class="wrap">
+									  <button class="button">Scientific Staff</button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</section> 
+				<!-- section end-->
+				<!-- section start-->
+				<!-- <section class="section no-padding-top">
+					<div class="container">
+						<div class="row bottom-50 align-items-end">
+							<div class="col-md-8">
+								<div class="heading heading--style-2"><span class="heading__pre-title">Destination</span>
+									<h2 class="heading__title no-margin-bottom"><span>your adventure</span> <span>begins here</span></h2>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="destination-slider__dots text-left text-md-right"></div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-holder">
+						<div class="slider-holder__wrapper">
+							<div class="destination-slider">
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/destination_1.jpg" alt="img"/>
+										<div class="destination-item__count"><span>01</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Bostwana</h6><a class="destination-item__link" href="#">Learn Adventure</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/destination_2.jpg" alt="img"/>
+										<div class="destination-item__count"><span>02</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Kenya</h6><a class="destination-item__link" href="#">Learn Adventure</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/destination_3.jpg" alt="img"/>
+										<div class="destination-item__count"><span>03</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">South Africa</h6><a class="destination-item__link" href="#">Learn Adventure</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/destination_4.jpg" alt="img"/>
+										<div class="destination-item__count"><span>04</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Uganda</h6><a class="destination-item__link" href="#">Learn Adventure</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/destination_5.jpg" alt="img"/>
+										<div class="destination-item__count"><span>05</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Tanzania</h6><a class="destination-item__link" href="#">Learn Adventure</a>
+										</div>
+									</div>
+								</div>
+								<div class="destination-slider__item">
+									<div class="destination-item"><img class="img--bg" src="img/destination_1.jpg" alt="img"/>
+										<div class="destination-item__count"><span>06</span></div>
+										<div class="destination-item__details">
+											<h6 class="destination-item__title">Bostwana</h6><a class="destination-item__link" href="#">Learn Adventure</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+				<!-- section end-->
+				<!-- section start-->
+			<!-- 	<section class="section no-padding-top no-padding-bottom">
+					<div class="map-banner"><img class="img--bg" src="img/cta_bg.jpg" alt="img"/>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="align-container">
+										<div class="align-container__item">
+											<div class="heading heading--primary">
+												<h2 class="heading__title no-margin-bottom"><span>Map of Animals world</span> <span>Zoo</span></h2>
+											</div><a class="button button--primary" href="#">See map</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+				<!-- section end-->
+				<!-- section start-->
+		<!-- 		<section class="section">
+					<div class="testimonials testimonials--style-1">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 d-none d-lg-block">
+									<div class="testimonials__img"><img class="img--bg" src="img/man.jpg" alt="img"/></div>
+								</div>
+								<div class="col-lg-9">
+									<div class="row">
+										<div class="col-md-7">
+											<div class="heading heading--primary"><span class="heading__pre-title">Testimonials</span>
+												<h2 class="heading__title"><span>What People<br/> Says</span> <span>About Us</span></h2>
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="testimonials--style-1__dots text-md-right"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<div class="testimonials-slider testimonials-slider--style-1">
+												<div class="testimonials-slider__item">
+													<div class="testimonials-slider__text">
+														<p>Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.</p>
+													</div>
+													<div class="testimonials-slider__details"><span class="testimonials-slider__name">John Maclein</span></div>
+												</div>
+												<div class="testimonials-slider__item">
+													<div class="testimonials-slider__text">
+														<p>Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.</p>
+														<p>Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.</p>
+													</div>
+													<div class="testimonials-slider__details"><span class="testimonials-slider__name">John Maclein</span></div>
+												</div>
+												<div class="testimonials-slider__item">
+													<div class="testimonials-slider__text">
+														<p>Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.</p>
+														<p>Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.</p>
+														<p>Rudderfish long-finned pikerazorfish menhaden paradise fish, barramundi oceanic flyingfish. Fangtooth yellowtail banded killifish seamoth triplefin blenny desert pupfish crocodile shark catfish cutlassfish broadband dogfish whalefish.</p>
+													</div>
+													<div class="testimonials-slider__details"><span class="testimonials-slider__name">John Maclein</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+				<!-- section end-->
+				<!-- instagram start-->
+			<!-- 	<section class="section instagram instagram--front-5"><img class="instagram__img" src="img/instagram_img.png" alt="img"/>
+					<div class="container">
+						<div class="row align-items-end bottom-30">
+							<div class="col-7 col-lg-8">
+								<div class="heading heading--primary">
+									<h2 class="heading__title no-margin-bottom"><span>#Safariadventures</span></h2>
+								</div>
+							</div>
+							<div class="col-5 col-lg-4 text-right"><span class="instagram__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span></div>
+						</div>
+					</div>
+					<div class="instagram-slider"><a class="instagram-slider__item" href="#"><img class="img--bg" src="img/ig_1.jpg" alt="img"/><span class="instagram-slider__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span><span class="instagram-slider__icon-hover"><i class="fa fa-instagram" aria-hidden="true"></i></span></a><a class="instagram-slider__item" href="#"><img class="img--bg" src="img/ig_2.jpg" alt="img"/><span class="instagram-slider__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span><span class="instagram-slider__icon-hover"><i class="fa fa-instagram" aria-hidden="true"></i></span></a><a class="instagram-slider__item" href="#"><img class="img--bg" src="img/ig_3.jpg" alt="img"/><span class="instagram-slider__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span><span class="instagram-slider__icon-hover"><i class="fa fa-instagram" aria-hidden="true"></i></span></a><a class="instagram-slider__item" href="#"><img class="img--bg" src="img/ig_4.jpg" alt="img"/><span class="instagram-slider__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span><span class="instagram-slider__icon-hover"><i class="fa fa-instagram" aria-hidden="true"></i></span></a><a class="instagram-slider__item" href="#"><img class="img--bg" src="img/ig_5.jpg" alt="img"/><span class="instagram-slider__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span><span class="instagram-slider__icon-hover"><i class="fa fa-instagram" aria-hidden="true"></i></span></a><a class="instagram-slider__item" href="#"><img class="img--bg" src="img/ig_6.jpg" alt="img"/><span class="instagram-slider__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span><span class="instagram-slider__icon-hover"><i class="fa fa-instagram" aria-hidden="true"></i></span></a><a class="instagram-slider__item" href="#"><img class="img--bg" src="img/ig_4.jpg" alt="img"/><span class="instagram-slider__icon"><i class="fa fa-instagram" aria-hidden="true"></i></span><span class="instagram-slider__icon-hover"><i class="fa fa-instagram" aria-hidden="true"></i></span></a></div>
+				</section> -->
+				<!-- instagram end-->
+			</main>
+			<!-- footer start-->
+			<footer class="footer" ><img class="footer__bg img--bg" src="img/background__layout.png" alt="bg"/>
+				<div class="container">
+					<div class="row ">
+						<div class="col-md-5 col-xl-4 text-center text-md-left" data-aos="flip-right">
+							<h6 class="footer__title">Contact Us</h6>
+							<div class="footer__details" >
+								<p><strong>Officer-in-Charge,</strong> <span>Arunachal Pradesh Regional Centre
+Zoological Survey of India Sanki Valley, Itanagar, 791113,
+Arunachal Pradesh</span></p>
+								<p><strong>Phone:</strong> <a href="#"> 0360-2203652, </a> <a href="#">0360-2203689</a></p>
+								<p><strong>Fax:</strong> <a href="#"> 0360-2203652</a> <a href="#">91-33-24008595</a></p>
+								<p><strong>Email:</strong> <a href="mailto:zsi@example.com">aprc[at]zsi[dot]gov[dot]in</a></p>
+								
+							</div>
+							<ul class="socials">
+								<li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+								<li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-7 col-xl-5 d-none d-md-block" data-aos="flip-left">
+							<h6 class="footer__title">Menu & Links</h6>
+							<ul class="footer-menu">
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">ZSIMIS</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Site Map </a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Archive</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Admin Login</a></li>
+								
+								
+							</ul>
+							<ul class="footer-submenu">
+							  <li class="footer-submenu__item"><a class="footer-submenu__link" href="#">Website Policy</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 d-none d-xl-block" data-aos="flip-left">
+							<h6 class="footer__title"><span>Tweeter</span> <i class="fa fa-twitter" aria-hidden="true"></i>
+							</h6>
+							<div class="footer-instagram">
+							<a class="footer-instagram__item" href="#">
+								<div class="">
+									<iframe style="border:none;" height="265" data-tweet-url="https://twitter.com/ZoologicalI" src="data:text/html;charset=utf-8,%3Ca%20class%3D%22twitter-timeline%22%20href%3D%22https%3A//twitter.com/ZoologicalI%3Fref_src%3Dtwsrc%255Etfw%22%3ETweets%20by%20ZoologicalI%3C/a%3E%0A%3Cscript%20async%20src%3D%22https%3A//platform.twitter.com/widgets.js%22%20charset%3D%22utf-8%22%3E%3C/script%3E%0A"></iframe>
+								</div>
+							</a>
+						  </div>
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-sm-12 text-center text-sm-left">
+							<div class="footer-privacy"><a class="footer-privacy__link" href="#">Last Updated: 24-8-2022</a><span class="footer-privacy__divider">|</span><a class="footer-privacy__link" href="#">Visitors: 000000854</a></div>
+						</div>
+						<!-- <div class="col-sm-6 text-center text-sm-right"><a class="footer__link" href="#"><img src="img/nic_logo.png" alt="logo"/></a></div> -->
+						<div class="col-sm-3 text-center color--white"><a class="footer__link" href="#"><img src="img/nic_logo.png" alt="logo"/></a></div>
+						<div class="col-sm-6 text-center color--white">
+						 <p>Site designed and hosted by National Informatics Centre<br>
+© Content Owned, Updated and Maintained by Zoological Survey of India, Government of India</p> 
+						</div>
+						<div class="col-sm-3 text-center color--white"><a class="footer__link-2" href="#"><img src="img/gov_logo.png" alt="logo"/></a></div>
+					</div>
+				</div>
+			</footer><?php //*/ ?>
+			<!-- footer end-->
+		</div>
+		<!-- libs-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<!-- scripts-->
+		<script src="js/common.js"></script>
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+		<script type="text/javascript">
+			AOS.init({
+			  duration: 1500
+			});
+
+			   /* AOS.init({
+			      offset: 200,
+			      duration: 600,
+			      easing: 'ease-in-sine',
+			      delay: 100,
+			    });*/
+function searchToggle(obj, evt){
+    var container = $(obj).closest('.search-wrapper');
+        if(!container.hasClass('active')){
+            container.addClass('active');
+            evt.preventDefault();
+        }
+        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+        }
+}
+		</script>
+		
+	</body>
+</html>

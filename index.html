@@ -85,7 +85,7 @@
 										  <li><a target="_self" href="#">NRC Dehra Dun</a></li>    
 										  <li><a target="_self" href="#">SRC Canning</a></li>
 										  <li><a target="_self" href="#">ANRC Port Blair</a></li>    
-										  <li><a target="_self" href="#">APRC Itanagar</a></li>    
+										  <li><a target="_self" href="aprc.html">APRC Itanagar</a></li>    
 										  <li><a target="_self" href="#">CZRC Jabalpur</a></li>   
 										  <li><a target="_self" href="#">DRC Jodhpur</a></li>    
 										  <li><a target="_self" href="#">EBRC Orissa</a></li>    
@@ -114,7 +114,7 @@
 									<!-- sub menu end-->
 								</li>
 								<!-- <li class="main-menu__item"><a class="main-menu__link" href="blog.html"><span>Blog</span></a></li> -->
-								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Publications</span></a>
+								<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Resources</span></a>
 									<!-- sub menu start-->
 									<ul class="main-menu__sub-list">
 										<li><a href="#"><span>Publications of ZSI</span></a></li>
@@ -176,6 +176,13 @@
 								<li><a class="item--youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 								<li><a class="item--instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 							</ul>
+							<div class="search-wrapper">
+							    <div class="input-holder">
+							        <input type="text" class="search-input" placeholder="Type to search" />
+							        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+							    </div>
+							    <span class="close" onclick="searchToggle(this, event);"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -325,7 +332,7 @@
 								
 								<div class="hex bg1"><img src="img/ministers/d_murmu.jpg" alt="profile"></div>
 
-								 <h6 class="animal-item__title">Smt. Droupadi Murmu<br><span>(President)</span></h6>
+								 <h6 class="animal-item__title">Smt. Droupadi Murmu<br><span>President</span></h6>
 
 								  </a></div>
 
@@ -344,7 +351,7 @@ for MoEF&CC</span></h6></a></div>
 
 							<div class="col-sm-6 col-md-4 col-xl-2" data-aos="fade-up"><a class="animal-item text-center" href="#">
 								<div class="hex bg1"><img src="img/ministers/l_nandan.jpg" alt="profile"></div>
-								<h6 class="animal-item__title">Ms. Leena Nandan<br><span>(Secretary, EF&CC)</span></h6></a></div>
+								<h6 class="animal-item__title">Ms. Leena Nandan<br><span>Secretary, EF&CC</span></h6></a></div>
 							
 						</div>
 					</div>
@@ -393,7 +400,7 @@ for MoEF&CC</span></h6></a></div>
 					</div>
 					<div class="row no-gutters gallery-masonry">
 						<div class="col-sm-6 col-md-3 gallery-masonry__item" data-aos="zoom-in"><a class="gallery-masonry__img gallery-masonry__item--height-1" href="img/gallery/Gateracantha_arcuata_Amitava.jpg" data-fancybox="gallery"><img class="img--bg" src="img/gallery/Gateracantha_arcuata_Amitava.jpg" alt="img"/>
-							<div class="gallery-masonry__description"><span>Spider</span><span>Gateracantha arcuata</span></div></a></div>
+							<div class="gallery-masonry__description"><span>Spider</span><span>Orb weaver spider</span></div></a></div>
 						<div class="col-sm-6 col-md-6 gallery-masonry__item" data-aos="zoom-in"><a class="gallery-masonry__img gallery-masonry__item--height-2" href="img/gallery/FishingCat_Amitava.jpg" data-fancybox="gallery"><img class="img--bg" src="img/gallery/FishingCat_Amitava.jpg" alt="img"/>
 							<div class="gallery-masonry__description"><span>Mammals</span><span>Fishing Cat</span></div></a></div>
 						<div class="col-sm-6 col-md-3 gallery-masonry__item" data-aos="zoom-in"><a class="gallery-masonry__img gallery-masonry__item--height-3" href="img/gallery/Tiger_AmitavaMajumder.jpg" data-fancybox="gallery"><img class="img--bg" src="img/gallery/Tiger_AmitavaMajumder.jpg" alt="img"/>
@@ -986,7 +993,7 @@ of Rs. 5 lakhs, a scroll and a medallion... <a href="#">Read More</a>
 								<p><strong>Location:</strong> <span>Zoological Survey of India, Prani Vigyan Bhawan, M-Block, New 
 Alipore Kolkata-700053</span></p>
 								<p><strong>Phone:</strong> <a href="tel:91-33-24008595">91-33-24008595</a> <a href="#">91-33-24008595</a></p>
-								<p><strong>Email:</strong> <a href="mailto:zsi@example.com">zsi@example.com</a></p>
+								<p><strong>Email:</strong> <a href="director@zsi.gov.in">director@zsi.gov.in</a></p>
 								
 							</div>
 							<ul class="socials">
@@ -1057,6 +1064,19 @@ Alipore Kolkata-700053</span></p>
 			      delay: 100,
 			    });*/
 
+
+function searchToggle(obj, evt){
+    var container = $(obj).closest('.search-wrapper');
+        if(!container.hasClass('active')){
+            container.addClass('active');
+            evt.preventDefault();
+        }
+        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+        }
+}
 		</script>
 		
 	</body>
